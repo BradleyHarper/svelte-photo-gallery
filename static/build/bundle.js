@@ -2000,6 +2000,8 @@ var app = (function () {
     	let image2;
     	let t4;
     	let image3;
+    	let t5;
+    	let image4;
     	let current;
 
     	image0 = new Image({
@@ -2046,6 +2048,17 @@ var app = (function () {
     			$$inline: true
     		});
 
+    	image4 = new Image({
+    			props: {
+    				src: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MDAiIGhlaWdodD0iMjgxIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTAgMTQxdjE0MGgzNGMzMyAwIDM1IDAgMzktMmw3LTJjMyAwIDQgMSA1IDIgMSAyIDIgMiAxNiAyaDE0bC0xLTNhMTcyNiAxNzI2IDAgMDEtMi0xMjdjLTItOS00LTIyLTItMjIgMSAwIDItMSAyLTMgMi01IDgtMTAgMTQtMTNsNS0yaDFsMi0xIDEzLTFhMjQ5IDI0OSAwIDAwMjMtMmwxOS0xYTYzMSA2MzEgMCAwMDU5LTMgMTA5MyAxMDkzIDAgMDExNDQtM2M2IDIgMzYgMiA1MCAxIDEyLTEgMTQtMSAxOC00IDYtNCAxNC01IDI5LTVoMTF2OTRjMCA3NyAxIDY4IDEtNDZWMEgwdjE0MW0wIDAiIGZpbGw9IiMwMDJmYTciIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==",
+    				srcset: "g/images/wallpaper-5-2560x1440-400.png 375w,g/images/wallpaper-5-2560x1440-800.png 768w,g/images/wallpaper-5-2560x1440-1200.png 1024w",
+    				ratio: "56.25%",
+    				srcsetWebp: "g/images/wallpaper-5-2560x1440-400.webp 375w,g/images/wallpaper-5-2560x1440-800.webp 768w,g/images/wallpaper-5-2560x1440-1200.webp 1024w",
+    				alt: "wallpaper"
+    			},
+    			$$inline: true
+    		});
+
     	const block = {
     		c: function create() {
     			div0 = element("div");
@@ -2060,11 +2073,13 @@ var app = (function () {
     			create_component(image2.$$.fragment);
     			t4 = space();
     			create_component(image3.$$.fragment);
-    			add_location(h1, file$2, 40, 4, 809);
-    			attr_dev(div0, "class", "title svelte-nyszma");
-    			add_location(div0, file$2, 39, 0, 785);
-    			attr_dev(div1, "class", "wallpapers svelte-nyszma");
-    			add_location(div1, file$2, 43, 0, 848);
+    			t5 = space();
+    			create_component(image4.$$.fragment);
+    			add_location(h1, file$2, 40, 4, 811);
+    			attr_dev(div0, "class", "title svelte-94qov0");
+    			add_location(div0, file$2, 39, 0, 787);
+    			attr_dev(div1, "class", "wallpapers svelte-94qov0");
+    			add_location(div1, file$2, 43, 0, 850);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2081,6 +2096,8 @@ var app = (function () {
     			mount_component(image2, div1, null);
     			append_dev(div1, t4);
     			mount_component(image3, div1, null);
+    			append_dev(div1, t5);
+    			mount_component(image4, div1, null);
     			current = true;
     		},
     		p: noop,
@@ -2090,6 +2107,7 @@ var app = (function () {
     			transition_in(image1.$$.fragment, local);
     			transition_in(image2.$$.fragment, local);
     			transition_in(image3.$$.fragment, local);
+    			transition_in(image4.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
@@ -2097,6 +2115,7 @@ var app = (function () {
     			transition_out(image1.$$.fragment, local);
     			transition_out(image2.$$.fragment, local);
     			transition_out(image3.$$.fragment, local);
+    			transition_out(image4.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -2107,6 +2126,7 @@ var app = (function () {
     			destroy_component(image1);
     			destroy_component(image2);
     			destroy_component(image3);
+    			destroy_component(image4);
     		}
     	};
 

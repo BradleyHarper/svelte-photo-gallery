@@ -31,7 +31,7 @@
         max-width: 1000px;
         margin: 0 auto;
     }
-    .wallpapers * {
+    .wallpapers > * {
         border: black 3px solid;
         border-radius: 20px;
     }
@@ -46,4 +46,5 @@
     <Image src="images/wallpaper-2-2560x1440.png" alt="wallpaper" />
     <Image src="images/wallpaper-3-2560x1440.png" alt="wallpaper" />
     <Image src="images/wallpaper-4-2560x1440.png" alt="wallpaper" />
+    <Image src="images/wallpaper-5-2560x1440.png" alt="wallpaper" />
 </div>
